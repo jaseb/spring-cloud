@@ -1,0 +1,7 @@
+---
+# Spring Boot defaults to 8080
+server:
+  port: 8080
+
+example:
+  message: Message from local application.yml
