@@ -3,7 +3,7 @@
 #
 #spring:
 #  application:
-#    name: eureka
+#    name: discovery
 #
 #eureka:
 #  instance:
