@@ -5,3 +5,17 @@ server:
 
 example:
   message: Message from local application.yml
+
+---
+spring:
+  profiles: zone-jp
+
+example:
+  message: Message from local application.yml - zone-jp
+
+---
+spring:
+  profiles: zone-us
+
+example:
+  message: Message from local application.yml - zone-us

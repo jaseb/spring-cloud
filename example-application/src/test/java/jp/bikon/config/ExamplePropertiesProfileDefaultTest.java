@@ -17,7 +17,7 @@ import static org.hamcrest.Matchers.equalTo;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ExamplePropertiesTest {
+public class ExamplePropertiesProfileDefaultTest {
 
     @Autowired
     private ExampleProperties config;

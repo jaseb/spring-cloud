@@ -98,6 +98,46 @@ Gradle:
   curl http://localhost:8080/message
 ```
 
+##0.1.1 - Add profiles to the application
+###Amend application.yml configuration
+
+Add 'zone-jp' and 'zone-us' profiles to [resources/application.yml](example-application/src/main/resources/application.yml)
+
+###Run the application
+```
+cd example-application
+```
+
+Maven:
+```
+./mvnw spring-boot:run -Drun.profiles=zone-jp
+```
+OR:
+
+```
+./mvnw spring-boot:run -Drun.jvmArguments="-Dspring.profiles.active=zone-jp"
+```
+
+Gradle:
+```
+SPRING_PROFILES_ACTIVE=zone-jp ./gradlew bootRun
+```
+
+IDE (VM arguments):
+```
+-Dspring.profiles.active=zone-jp
+```
+
+Java (command line, from 'target' directory):
+```
+java -jar -Dspring.profiles.active=zone-jp example-0.1.1.jar
+```
+
+###Test - the result should match the 'example.message' value for the profile
+```
+curl http://localhost:8080/message
+```
+
 Links
 --------------------------------------------------------------------------------
 Spring Cloud:
