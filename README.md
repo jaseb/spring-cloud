@@ -29,7 +29,8 @@ Project sections
 - [0.1.0 - Create example application](reference/EXAMPLE.md)
   - [0.1.1 - Add profiles to the application](reference/EXAMPLE.md)
 - [0.2.0 - Cloud configuration using @EnableConfigServer](reference/CONFIGURATION.md)
-  - [0.2.1 - Amend Example Application to use Cloud Configuration](reference/CONFIGURATION.md)
+  - [0.2.1 - Amend example application to use cloud configuration](reference/CONFIGURATION.md)
+  - [0.2.2 - Runtime configuration changes (including @RefreshScope)](reference/CONFIGURATION.md)
 
 
 [References / Links](reference/LINKS.md)
