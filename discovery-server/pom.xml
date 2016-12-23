@@ -9,7 +9,7 @@
     <!--<version>0.3.0-SNAPSHOT</version>--><!-- declared in parent pom -->
     <packaging>jar</packaging>
 
-    <name>discovery</name>
+    <name>Discovery Server</name>
     <description>Spring Cloud Discovery Server</description>
 
     <parent>
