@@ -17,17 +17,17 @@ Otherwise, if using Gradle:
 
 ###Add Controller and configuration
 
-Add [jp.bikon.web.ExampleController.java](example-application/src/main/java/jp/bikon/web/ExampleController.java)
+Add [jp.bikon.web.ExampleController.java](../example-application/src/main/java/jp/bikon/web/ExampleController.java)
 
-Add [jp.bikon.domain.Example.java](example-application/src/main/java/jp/bikon/domain/Example.java)
+Add [jp.bikon.domain.Example.java](../example-application/src/main/java/jp/bikon/domain/Example.java)
 
-Add [jp.bikon.config.ExampleProperties.java](example-application/src/main/java/jp/bikon/config/ExampleProperties.java)
+Add [jp.bikon.config.ExampleProperties.java](../example-application/src/main/java/jp/bikon/config/ExampleProperties.java)
 
-Add 'example.message' property to [resources/application.yml](example-application/src/main/resources/application.yml)
+Add 'example.message' property to [resources/application.yml](../example-application/src/main/resources/application.yml)
 
 ###Run the application
 
-See [Running the application](reference/RUNNING.md)
+See [Running the application](RUNNING.md)
 
 ###Test
 ```
@@ -37,14 +37,14 @@ See [Running the application](reference/RUNNING.md)
 ##0.1.1 - Add profiles to the application
 ###Amend application.yml configuration
 
-Add 'zone-jp' and 'zone-us' profiles to [resources/application.yml](example-application/src/main/resources/application.yml)
+Add 'zone-jp' and 'zone-us' profiles to [resources/application.yml](../example-application/src/main/resources/application.yml)
 
 ###Run the application using one of the profiles defined in the previous step
 ```
 cd example-application
 ```
 
-See [Running the application](reference/RUNNING.md)
+See [Running the application](RUNNING.md)
 
 ###Test - the result should match the 'example.message' value for the profile
 ```

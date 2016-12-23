@@ -11,11 +11,11 @@ Example:
 
 Maven example:
 
-[example-application/bin/boot-maven.sh](example-application/bin/boot-maven.sh)
+[example-application/bin/boot-maven.sh](../example-application/bin/boot-maven.sh)
 
 Gradle example:
 
-[example-application/bin/boot-gradle.sh](example-application/bin/boot-gradle.sh)
+[example-application/bin/boot-gradle.sh](../example-application/bin/boot-gradle.sh)
 
 Spring Boot 'actuator' and 'devtools' dependencies have been included where applicable.
 
@@ -23,7 +23,7 @@ Spring Boot 'actuator' and 'devtools' dependencies have been included where appl
 Removing a build system from the project (run from project root):
 
 Maven:
-[bin/remove-maven.sh](bin/remove-maven.sh)
+[bin/remove-maven.sh](../bin/remove-maven.sh)
 
 Gradle:
-[bin/remove-gradle.sh](bin/remove-gradle.sh)
+[bin/remove-gradle.sh](../bin/remove-gradle.sh)
