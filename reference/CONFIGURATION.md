@@ -71,33 +71,6 @@ Start ExampleApplication, and test REST endpoint:
 curl http://localhost:8080/message
 ```
 
-##0.2.2 - Runtime configuration changes with @RefreshScope 
-###Setup
+IMPORTANT: When testing 'example-application', the configuration server must be running.
 
-Ensure ConfigServer is running (optionally with -Dspring.profiles.active=native)
-
-Ensure ExampleApplication is running
-
-#####Updated the property
-
-If testing locally, change the 'example.message' property in [resources/config/example.yml](../config-server/src/main/resources/config/example.yml) and reload the change in IntelliJ (Cmd-Shift-F9)
-
-If testing remotely, change the 'example.message' property in [config/example.yml](../config/example.yml), and commit to GitHub
-
-#####Verify the updated property
-Verify the change on ConfigServer:
-```
-curl http://localhost:8888/example/default
-```
-
-Send a POST request to the 'example-application' to trigger an refresh:
-```
-curl -X POST http://localhost:8080/refresh
-```
-
-Verify the updated value:
-```
-curl http://localhost:8080/message
-```
-
-If using @Value annotations, then @RefreshScope must be added to the class (Controller, Service, Component, etc)
+As this repository contains all modules under a parent pom.xml, this creates and issue with 'mvn release:prepare and mvn release:perform'
