@@ -1,19 +1,21 @@
 package jp.bikon.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
 import javax.validation.constraints.NotNull;
 
 /**
  * Copyright (c) 2016 Jase Batchelor. All rights reserved.
  * <p>
- * See: http://docs.spring.io/spring-boot/docs/current/
+ * See: http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/
  * - 24.7 Type-safe Configuration Properties
  *
  * @author jase
  */
+@Component
 @ConfigurationProperties(prefix = "example")
-public final class ExampleProperties {
+public class ExampleProperties {
 
     /**
      * Message text used in JSON response.
