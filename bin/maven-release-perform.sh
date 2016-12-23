@@ -13,3 +13,6 @@ then
 fi
 
 mvn release:clean && mvn release:prepare && mvn release:perform
+
+# Sync the '[maven-release-plugin] prepare for next development iteration' commit
+git fetch
