@@ -138,6 +138,23 @@ java -jar -Dspring.profiles.active=zone-jp example-0.1.1.jar
 curl http://localhost:8080/message
 ```
 
+##0.2.0 - @EnableConfigServer - create configuration server
+###Create the project skeleton
+
+```
+cd config-server
+```
+
+If using Maven:
+```
+./bin/boot-maven.sh
+```
+
+Otherwise, if using Gradle:
+```
+./bin/boot-gradle.sh
+```
+
 Links
 --------------------------------------------------------------------------------
 Spring Cloud:
