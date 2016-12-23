@@ -1,21 +1,30 @@
 ---
 # Spring Boot defaults to 8080
 server:
-  port: 8080
+  port: ${PORT:${SERVER_PORT:0}}
+
+eureka:
+  client:
+    serviceUrl:
+      # Generally provide comma separated list of clients
+      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8761}/eureka/
 
 example:
-  message: Message from local application.yml
+  message: Message from remote application.yml
 
 ---
 spring:
   profiles: zone-jp
 
 example:
-  message: Message from local application.yml - zone-jp
-
+  message: Message from remote application.yml - zone-jp
+  #message: '{cipher}TODO: INSERT ENCRYPTED MESSAGE HERE'
+  # Example:
+  #message: '{cipher}AQB8sKAAjQw+ov9mBEVkT4uEcIr6wigZrAgFXVrTScJAv9RZg/mxlrkidj+glIij/Hb8mfCd4quggs+ZQoi34kPoimBUOCZ2Xd7CZ6A1IKA+zf9aCmPrQiWAw2PkqIfB9/GqSxtsNwV1j8BaTN123GEpeK7MbT3KiNIwNmDfOkoP0JPDVwR1NWpplYz88sNTRcrq7Xkp/sfE1apEhtWsEBQUjEPB7SGDpCbVm3GLSlSXTgfOE165aE2S4eN0Kio4yrvDVuoeV7BApvtcfazQk0zaWRETQ4TDjloBFWGfa5NAhyN3ieI3jtVxrUIyo3Qm9pKq6f759HtbfbUc8aFoDmiaK0B9fsXRsElcv2fwqni7Q7JdxegLsFRLXTeAGiED8nDarrAII7Q1NzUgLYklO2lW3JHfdhcwndlopQI4D54fz5cDN0ArC1xOd9YQmUjtcFE='
 ---
 spring:
   profiles: zone-us
 
 example:
-  message: Message from local application.yml - zone-us
+  message: Message from remote application.yml - zone-us
+

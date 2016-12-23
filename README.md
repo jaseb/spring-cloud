@@ -34,5 +34,6 @@ Project sections
   - [0.2.3 - Configuration property encryption and decryption](reference/CONFIGURATION.md)
 - [0.3.0 - Discovery server using @EnableEurekaServer](reference/DISCOVERY.md)
   - [0.3.1 - Amend discovery server to use cloud configuration](reference/DISCOVERY.md)
+  - [0.3.2 - Amend example application to use discovery server](reference/DISCOVERY.md)
 
 [References / Links](reference/LINKS.md)
