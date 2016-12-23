@@ -70,3 +70,7 @@ Start ExampleApplication, and test REST endpoint:
 ```
 curl http://localhost:8080/message
 ```
+
+IMPORTANT: When testing 'example-application', the configuration server must be running.
+
+As this repository contains all modules under a parent pom.xml, this creates and issue with 'mvn release:prepare and mvn release:perform'

@@ -9,3 +9,16 @@ spring:
   cloud:
     config:
       uri: http://localhost:8888
+      failFast: true
+
+---
+spring:
+  profiles: test
+  application:
+    name: example
+  cloud:
+    config:
+      enabled: false
+
+
+
