@@ -101,3 +101,41 @@ curl http://localhost:8080/message
 ```
 
 If using @Value annotations, then @RefreshScope must be added to the class (Controller, Service, Component, etc)
+
+##0.2.3 - Configuration property encryption and decryption
+
+The following is based on the example from [Spring Cloud Documentation](http://cloud.spring.io/spring-cloud-static/Camden.SR3/)
+- [Encryption and Decryption](http://cloud.spring.io/spring-cloud-static/Camden.SR3/#_encryption_and_decryption)
+- [Key Management](http://cloud.spring.io/spring-cloud-static/Camden.SR3/#_key_management)
+
+#####Setup the Java keystore
+
+Run [keytool.sh](../bin/keytool.sh), and copy server.jks to [resources/server.jks](../config-server/src/main/resources/server.jks)
+
+Amend [resources/application.yml](../config-server/src/main/resources/application.yml) with the keystore settings
+
+#####Install Java Cryptography Extension (JCE) Unlimited Strength
+
+Download Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files
+
+http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html
+
+Install into $JAVA_HOME/jre/lib/security 
+
+Eg: /Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/security
+
+#####Test
+
+Encrypt a test message:
+```
+curl localhost:8888/encrypt -d "Test encrypted message"
+```
+
+Replace the value of 'example.message' in example.yml with the output from the previous command
+
+Eg '{cipher}<OUTPUT FROM PREVIOUS>'
+
+Verify decryption is working:
+```
+curl http://localhost:8888/example/default
+```

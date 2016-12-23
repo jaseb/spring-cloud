@@ -26,4 +26,9 @@ spring:
           # Default: [classpath:/, classpath:/config, file:./, file:./config]
           searchLocations: classpath:config/
 
-
+encrypt:
+  keyStore:
+    location: classpath:/server.jks
+    password: testpass
+    alias: testkey
+    secret: changeme
