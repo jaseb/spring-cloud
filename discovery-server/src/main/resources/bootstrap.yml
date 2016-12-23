@@ -1,0 +1,12 @@
+---
+server:
+  port: ${PORT:8761}
+
+spring:
+  application:
+    name: discovery
+  profiles:
+    active: default
+  cloud:
+    config:
+      uri: http://localhost:8888

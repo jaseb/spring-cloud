@@ -51,12 +51,12 @@ curl http://localhost:8888/example/default
 curl http://localhost:8888/example/zone-jp
 ```
 
-##0.2.1 - Amend Example Application to use Cloud Configuration 
+##0.2.1 - Amend Example Application to use cloud configuration 
 ###Amend Configuration
 
 Add 'spring-cloud-dependencies' to dependencyManagement section of [pom.xml](..example-application/pom.xml)
 
-Add 'spring-cloud-starter-config' dependency to [pom.xml](..example-application/pom.xml)
+Add 'spring-cloud-starter-config' dependency to [pom.xml](../example-application/pom.xml)
 
 Add [resources/bootstrap.yml](..example-application/src/main/resources/bootstrap.yml) to 'example-application'
 
