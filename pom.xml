@@ -4,7 +4,7 @@
     <groupId>jp.bikon</groupId>
     <artifactId>spring-cloud</artifactId>
     <packaging>pom</packaging>
-    <version>0.3.0</version>
+    <version>0.3.1-SNAPSHOT</version>
     <name>Spring Cloud Example</name>
     <description>Spring Cloud (Netflix OSS) example</description>
     <url>https://github.com/jaseb/spring-cloud</url>
@@ -14,7 +14,7 @@
         <connection>scm:git:git@github.com/jaseb/spring-cloud.git</connection>
         <developerConnection>scm:git:git@github.com:jaseb/spring-cloud.git
         </developerConnection>
-      <tag>spring-cloud-0.3.0</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <issueManagement>
