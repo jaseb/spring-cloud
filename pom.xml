@@ -38,6 +38,7 @@
     <!-- For clarity add modules in order of startup -->
     <modules>
         <module>config-server</module>
+        <module>discovery-server</module>
         <module>example-application</module>
     </modules>
 
