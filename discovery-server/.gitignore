@@ -1,0 +1,20 @@
+################################################################################
+# System files
+.DS_Store
+*~
+*.swp
+
+################################################################################
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+
+#IntelliJ
+.idea
+*.iws
+*.iml
+*.ipr
