@@ -50,3 +50,23 @@ curl http://localhost:8888/example/default
 ```
 curl http://localhost:8888/example/zone-jp
 ```
+
+##0.2.1 - Amend Example Application to use Cloud Configuration 
+###Amend Configuration
+
+Add 'spring-cloud-dependencies' to dependencyManagement section of [pom.xml](..example-application/pom.xml)
+
+Add 'spring-cloud-starter-config' dependency to [pom.xml](..example-application/pom.xml)
+
+Add [resources/bootstrap.yml](..example-application/src/main/resources/bootstrap.yml) to 'example-application'
+
+Comment out (or remove) all content from [resources/application.yml](..example-application/src/main/resources/application.yml)
+
+###Test
+
+Ensure ConfigServer module is running (either 'native' or default profile)
+
+Start ExampleApplication, and test REST endpoint:
+```
+curl http://localhost:8080/message
+```

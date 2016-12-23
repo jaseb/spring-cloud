@@ -1,0 +1,11 @@
+---
+## Spring Boot defaults to 8080
+server:
+  port: 8080
+
+spring:
+  application:
+    name: example
+  cloud:
+    config:
+      uri: http://localhost:8888
