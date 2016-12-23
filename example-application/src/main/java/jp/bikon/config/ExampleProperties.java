@@ -6,9 +6,9 @@ import javax.validation.constraints.NotNull;
 
 /**
  * Copyright (c) 2016 Jase Batchelor. All rights reserved.
- *
+ * <p>
  * See: http://docs.spring.io/spring-boot/docs/current/
- *   - 24.7 Type-safe Configuration Properties
+ * - 24.7 Type-safe Configuration Properties
  *
  * @author jase
  */
