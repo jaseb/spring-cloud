@@ -1,0 +1,29 @@
+---
+# See: http://cloud.spring.io/spring-cloud-config/spring-cloud-config.html
+# Spring Boot Configuration Server defaults to 8888
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jaseb/spring-cloud
+          searchPaths: config
+
+        # "native" is used when the native profile is active, for local tests with a classpath repo:
+        #
+        # spring.profiles.active=native
+        #
+        # Put your .properties or .yml files inside src/main/resources/config folder.
+        # Make sure name of this files should match spring.application.name of your micro service.
+        # For example if spring.application.name=example then property file should
+        # be example.{yml | properties} in src/main/resources/config folder.
+        native:
+          # Default: [classpath:/, classpath:/config, file:./, file:./config]
+          searchLocations: classpath:config/
+
+

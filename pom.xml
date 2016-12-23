@@ -35,7 +35,9 @@
         <java.version>1.8</java.version>
     </properties>
 
+    <!-- For clarity add modules in order of startup -->
     <modules>
+        <module>config-server</module>
         <module>example-application</module>
     </modules>
 
