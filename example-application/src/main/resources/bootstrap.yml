@@ -26,5 +26,8 @@ spring:
     config:
       enabled: false
 
+eureka:
+  client:
+    enabled: false
 
 
