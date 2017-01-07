@@ -1,0 +1,11 @@
+---
+# Spring Boot defaults to 8080
+server:
+  port: 8080
+  # port: ${PORT:${SERVER_PORT:0}}
+
+eureka:
+  client:
+    serviceUrl:
+      # Generally provide comma separated list of clients
+      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8761}/eureka/

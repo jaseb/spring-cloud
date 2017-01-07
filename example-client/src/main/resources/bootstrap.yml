@@ -1,0 +1,32 @@
+---
+## Spring Boot defaults to 8080
+server:
+  port: 8080
+
+spring:
+  application:
+    name: example-client
+  cloud:
+    config:
+      uri: http://localhost:8888
+      failFast: true
+
+example:
+  ribbon:
+    eureka:
+      enabled: false
+  #listOfServers: localhost:8090,localhost:9092,localhost:9999
+  #ServerListRefreshInterval: 15000
+
+---
+spring:
+  profiles: test
+  application:
+    name: example
+  cloud:
+    config:
+      enabled: false
+
+eureka:
+  client:
+    enabled: false
