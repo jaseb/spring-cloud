@@ -36,5 +36,8 @@ Project sections
   - [0.3.1 - Amend discovery server to use cloud configuration](reference/DISCOVERY.md)
   - [0.3.2 - Amend example application to use discovery server](reference/DISCOVERY.md)
 - [0.4.0 - Load balancing with Ribbon](reference/LOAD_BALANCING.md)
+  - [0.4.1 - Configure example-application to run multiple instances locally](reference/LOAD_BALANCING.md)
+  - [0.4.2 - Add the Ribbon configuration](reference/LOAD_BALANCING.md)
+
 
 [References / Links](reference/LINKS.md)
