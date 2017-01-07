@@ -20,12 +20,15 @@ spring:
 # Eg. ${spring.application.name}:${spring.application.instance_id:${random.value}}
 #
 # The random value will NOT work using metadataMap.
+# Otherwise, declare profile specific ports. See config server - example.yml
 #
 eureka:
   instance:
     #leaseRenewalIntervalInSeconds: 30
     #leaseExpirationDurationInSeconds: 90
-    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    #instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
       registryFetchIntervalSeconds: 5
 

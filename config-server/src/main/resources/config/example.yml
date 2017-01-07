@@ -16,6 +16,9 @@ example:
 spring:
   profiles: zone-jp
 
+server:
+  port: 8081
+
 example:
   message: Message from local application.yml - zone-jp
   #message: '{cipher}TODO: INSERT ENCRYPTED MESSAGE HERE'
@@ -24,6 +27,9 @@ example:
 ---
 spring:
   profiles: zone-us
+
+server:
+  port: 8082
 
 example:
   message: Message from local application.yml - zone-us
