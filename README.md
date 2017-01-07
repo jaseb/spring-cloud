@@ -38,6 +38,8 @@ Project sections
 - [0.4.0 - Load balancing with Ribbon](reference/LOAD_BALANCING.md)
   - [0.4.1 - Configure example-application to run multiple instances locally](reference/LOAD_BALANCING.md)
   - [0.4.2 - Add the Ribbon configuration](reference/LOAD_BALANCING.md)
-
+- [0.5.0 - API Gateway using Zuul](reference/API_GATEWAY.md)
+  - [0.5.1 - Configuration using @EnableZuulProxy](reference/API_GATEWAY.md)
+  - [0.5.2 - Amendments to ExampleClientApplication](reference/API_GATEWAY.md)
 
 [References / Links](reference/LINKS.md)
