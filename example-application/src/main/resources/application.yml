@@ -1,6 +1,6 @@
 ---
-## Spring Boot defaults to 8080
-#server:
+server:
+  port: ${PORT:${SERVER_PORT:0}}
 
 ---
 spring:

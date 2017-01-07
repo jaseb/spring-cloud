@@ -1,7 +1,7 @@
 ---
 # Spring Boot defaults to 8080
-server:
-  port: ${PORT:${SERVER_PORT:0}}
+#server:
+#  port: ${PORT:${SERVER_PORT:0}}
 
 eureka:
   client:

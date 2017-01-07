@@ -1,6 +1,7 @@
 ---
 ## Spring Boot defaults to 8080
 server:
+  # Select any available port if neither port nor server port are specified.
   port: ${PORT:${SERVER_PORT:0}}
 
 spring:
@@ -11,11 +12,22 @@ spring:
       uri: http://localhost:8888
       failFast: true
 
-# Allow Eureka to recognize two apps of the same type on the same host as separate instances:
+# IMPORTANT:
+#
+# In order to run multiple versions of the same app on localhost for testing
+# use 'eureka.instance.instanceId' rather than 'eureka.instance.metadataMap.instanceId'.
+#
+# Eg. ${spring.application.name}:${spring.application.instance_id:${random.value}}
+#
+# The random value will NOT work using metadataMap.
+#
 eureka:
   instance:
-    metadataMap:
-      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    #leaseRenewalIntervalInSeconds: 30
+    #leaseExpirationDurationInSeconds: 90
+    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+      registryFetchIntervalSeconds: 5
 
 ---
 spring:
