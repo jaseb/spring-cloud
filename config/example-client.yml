@@ -4,7 +4,7 @@ info:
 
 # Spring Boot defaults to 8080
 server:
-  port: 8080
+  port: 8083
   # port: ${PORT:${SERVER_PORT:0}}
 
 eureka:

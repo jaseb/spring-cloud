@@ -30,11 +30,23 @@ zuul:
     socket-timeout-millis: 10000
   prefix: /api
   ignored-services: '*' # Blacklist all. Otherwise specify services
+  health:
+    enabled: true
   routes:
     example:
       path: /example/**
-      #stripPrefix: true
+      #path: /** # Eg. /api/<endpoint>
       serviceId: example
+      #stripPrefix: true
+    example-client:
+          #path: /example/**
+          path: /** # Eg. /api/<endpoint>. Last definition in this file has priority
+          serviceId: example-client
+          #stripPrefix: true
+#    oauth2:
+#      path: /uaa/**
+#      serviceId: oauth2
+#      stripPrefix: false
 
 #logging:
 #  level:

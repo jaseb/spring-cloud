@@ -35,6 +35,7 @@ example:
   #message: '{cipher}TODO: INSERT ENCRYPTED MESSAGE HERE'
   # Example:
   #message: '{cipher}AQB8sKAAjQw+ov9mBEVkT4uEcIr6wigZrAgFXVrTScJAv9RZg/mxlrkidj+glIij/Hb8mfCd4quggs+ZQoi34kPoimBUOCZ2Xd7CZ6A1IKA+zf9aCmPrQiWAw2PkqIfB9/GqSxtsNwV1j8BaTN123GEpeK7MbT3KiNIwNmDfOkoP0JPDVwR1NWpplYz88sNTRcrq7Xkp/sfE1apEhtWsEBQUjEPB7SGDpCbVm3GLSlSXTgfOE165aE2S4eN0Kio4yrvDVuoeV7BApvtcfazQk0zaWRETQ4TDjloBFWGfa5NAhyN3ieI3jtVxrUIyo3Qm9pKq6f759HtbfbUc8aFoDmiaK0B9fsXRsElcv2fwqni7Q7JdxegLsFRLXTeAGiED8nDarrAII7Q1NzUgLYklO2lW3JHfdhcwndlopQI4D54fz5cDN0ArC1xOd9YQmUjtcFE='
+
 ---
 spring:
   profiles: zone-au

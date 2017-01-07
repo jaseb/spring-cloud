@@ -1,4 +1,7 @@
 ---
+info:
+  component: Eureka Server Application
+
 # This default profile is used when running a single instance completely standalone:
 server:
   port: 8761
