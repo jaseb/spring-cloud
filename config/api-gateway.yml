@@ -1,8 +1,20 @@
 ---
+info:
+  component: API Gateway
+
 #spring:
 #  profiles: default
+
 server:
   port: 8080
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
 
 eureka:
   client:
@@ -11,6 +23,11 @@ eureka:
       defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8761}/eureka/
 
 zuul:
+  host:
+    max-total-connections: 200
+    max-per-route-connections: 20
+    connect-timeout-millis: 5000
+    socket-timeout-millis: 10000
   prefix: /api
   ignored-services: '*' # Blacklist all. Otherwise specify services
   routes:
@@ -18,7 +35,8 @@ zuul:
       path: /example/**
       #stripPrefix: true
       serviceId: example
-#    service-b:
-#      path: /custom-service-b/**
-#      stripPrefix: true
-#      serviceId: service-b:
+
+#logging:
+#  level:
+#    ROOT: INFO
+#    org.springframework.web: DEBUG

@@ -27,6 +27,7 @@ eureka:
     #leaseRenewalIntervalInSeconds: 30
     #leaseExpirationDurationInSeconds: 90
     #instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    preferIpAddress: true
     metadataMap:
       instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:

@@ -1,4 +1,7 @@
 ---
+info:
+  component: Example Client Application
+
 # Spring Boot defaults to 8080
 server:
   port: 8080

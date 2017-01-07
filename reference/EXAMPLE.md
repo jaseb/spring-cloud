@@ -37,7 +37,7 @@ See [Running the application](RUNNING.md)
 ##0.1.1 - Add profiles to the application
 ###Amend application.yml configuration
 
-Add 'zone-jp' and 'zone-us' profiles to [resources/application.yml](../example-application/src/main/resources/application.yml)
+Add 'zone-jp' and 'zone-au' profiles to [resources/application.yml](../example-application/src/main/resources/application.yml)
 
 ###Run the application using one of the profiles defined in the previous step
 ```

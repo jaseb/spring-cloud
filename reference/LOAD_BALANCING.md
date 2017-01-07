@@ -53,7 +53,7 @@ Run the service in the following order:
 - ConfigServer (Port 8888)
 - DiscoveryServer (Port 8761)
 - ExampleApplication (Random Port) using -Dspring.profiles.active=zone-jp
-- ExampleApplication (Random Port) using -Dspring.profiles.active=zone-us
+- ExampleApplication (Random Port) using -Dspring.profiles.active=zone-au
 
 Browse to [http://localhost:8761](http://localhost:8761) and two instances of ExampleApplication should be visible
 
