@@ -39,6 +39,31 @@ OR
 ./gradlew bootRun
 ```
 
+##0.5.1 - Configuration using @EnableZuulProxy
+
+Add @EnableZuulProxy to APIGatewayApplication.java
+
+Configure api-gateway.yml, application.yml and bootstrap.yml
+
+Test:
+
+Verify the service is running by requesting directly:
+
+```
+curl http://127.0.0.1:8081/message
+```
+
+Now request the endpoint via the proxy:
+
+```
+curl http://127.0.0.1:8080/api/example/message
+```
+
+##0.5.2 - Amendments to ExampleClientApplication
+
+The API gateway is now accepting and proxying requests on port 8080, therefore
+the ExampleClientApplication must be amended to use a different port.
+
 
 
 
