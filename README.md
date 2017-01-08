@@ -42,8 +42,4 @@ Project sections
   - [0.5.1 - Configuration using @EnableZuulProxy](reference/API_GATEWAY.md)
   - [0.5.2 - Amendments to ExampleClientApplication](reference/API_GATEWAY.md)
 
-
-- [WIP - Spring Boot Admin Server](http://codecentric.github.io/spring-boot-admin/1.4.5/)
-  - [Hystrix and Turbine Integration]()
-
 [References / Links](reference/LINKS.md)
