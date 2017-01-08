@@ -65,7 +65,7 @@ Add @HystrixCommand(fallbackMethod = "returnDefaultMessage") to [ExampleClientCo
 and add fallback method
 
 
-##Testing the circuit breaker:
+##0.6.2 - Testing the circuit breaker
 
 Start the following applications in this order:
 
