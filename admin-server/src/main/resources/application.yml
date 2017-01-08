@@ -1,0 +1,20 @@
+---
+info:
+  component: Admin Server Application
+
+server:
+  port: 8084
+
+spring:
+  application:
+    name: admin-server
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8761}/eureka/
+
+
