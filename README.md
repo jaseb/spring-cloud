@@ -44,5 +44,7 @@ Project sections
 - [0.6.0 - Circuit breaker using Hystrix](reference/HYSTRIX.md)
   - [0.6.1 - Amend example-client to use Hystrix](reference/HYSTRIX.md)
   - [0.6.2 - Testing the circuit breaker](reference/HYSTRIX.md)
+- [0.7.0 - Stream aggregation with Turbine](reference/TURBINE.md)
+  - [0.7.1 - Testing the stream aggregation](reference/TURBINE.md)
 
 [References / Links](reference/LINKS.md)
