@@ -46,5 +46,28 @@ Project sections
   - [0.6.2 - Testing the circuit breaker](reference/HYSTRIX.md)
 - [0.7.0 - Stream aggregation with Turbine](reference/TURBINE.md)
   - [0.7.1 - Testing the stream aggregation](reference/TURBINE.md)
+- [0.8.0 - Spring Boot Admin Server](reference/ADMIN_SERVER.md)
+
+
+Links for local testing:
+--------------------------------------------------------------------------------
+
+Chassis:
+- http://localhost:8888 - Configuration Server
+- http://localhost:8761 - Eureka Server
+- http://localhost:8080 - API Gateway
+
+Applications:
+- http://localhost:8080/api/balance - Example Client using API Gateway
+- http://localhost:8081/balance - Example Client
+- http://localhost:8082/message - Example (AU)
+- http://localhost:8083/message - Example (JP)
+
+Monitoring:
+- http://localhost:8084 - Admin Application
+- http://localhost:7979 - Hystrix Dashboard
+- http://localhost:8989 - Turbine Aggregation
+
+
 
 [References / Links](reference/LINKS.md)
