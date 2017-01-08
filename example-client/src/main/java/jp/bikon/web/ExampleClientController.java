@@ -29,7 +29,7 @@ public class ExampleClientController {
         return new RestTemplate();
     }
 
-    @HystrixCommand(fallbackMethod = "handleFallback")
+    @HystrixCommand(groupKey = "GetMessage", commandKey = "GetMessage", fallbackMethod = "handleFallback")
     @RequestMapping("/balance")
     public String getMessageFromExampleApplication() {
 
