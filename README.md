@@ -41,5 +41,6 @@ Project sections
 - [0.5.0 - API Gateway using Zuul](reference/API_GATEWAY.md)
   - [0.5.1 - Configuration using @EnableZuulProxy](reference/API_GATEWAY.md)
   - [0.5.2 - Amendments to ExampleClientApplication](reference/API_GATEWAY.md)
+- [0.6.0 - Circuit breaker using Hystrix](reference/HYSTRIX.md)
 
 [References / Links](reference/LINKS.md)
