@@ -8,7 +8,7 @@
 #
 curl https://start.spring.io/starter.zip \
   -d type=gradle-project \
-  -d applicationName="HystrixDashBoardApplication" \
+  -d applicationName="HystrixDashboardApplication" \
   -d packageName="jp.bikon" \
   -d groupId="jp.bikon" -d name="Hystrix Dashboard" -d artifactId="hystrix-dashboard" \
   -d description="Spring Hystrix Dashboard Application" \
