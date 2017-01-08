@@ -2,7 +2,7 @@
 ###Create the project skeleton
 
 ```
-cd example-application
+cd hystrix-dashboard
 ```
 
 If using Maven:
