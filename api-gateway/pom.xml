@@ -9,7 +9,7 @@
     <!--<version>0.5.0-SNAPSHOT</version>--><!-- declared in parent pom -->
     <packaging>jar</packaging>
 
-    <name>api-gateway</name>
+    <name>API Gateway</name>
     <description>Spring API Gateway Server</description>
 
     <parent>
@@ -95,6 +95,7 @@
                 <executions>
                     <execution>
                         <goals>
+                            <goal>build-info</goal>
                             <goal>repackage</goal>
                         </goals>
                     </execution>
