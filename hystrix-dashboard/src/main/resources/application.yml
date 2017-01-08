@@ -1,0 +1,21 @@
+info:
+  component: Hystrix Dashboard
+
+server:
+  port: 7979
+
+spring:
+  application:
+    name: hystrix-dashboard
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+
+eureka:
+  client:
+    serviceUrl:
+      # Generally provide comma separated list of clients
+      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8761}/eureka/
