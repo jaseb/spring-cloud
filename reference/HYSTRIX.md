@@ -71,7 +71,7 @@ Start the following applications in this order:
 
 - ConfigServerApplication
 - DiscoveryServerApplication
-- HystrixDashBoardApplication
+- HystrixDashboardApplication
 - ExampleClientApplication
 
 
