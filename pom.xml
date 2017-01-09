@@ -39,7 +39,14 @@
     <modules>
         <module>config-server</module>
         <module>discovery-server</module>
+        <module>api-gateway</module>
+        <!-- Applications -->
         <module>example-application</module>
+        <module>example-client</module>
+        <!-- Monitoring -->
+        <module>hystrix-dashboard</module><!-- Optional - use admin-server -->
+        <module>turbine-application</module>
+        <module>admin-server</module>
     </modules>
 
     <build>
