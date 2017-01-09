@@ -1,3 +1,5 @@
 rootProject.name = 'spring-cloud'
 
-include 'config-server', 'discovery-server', 'example-application'
+include 'config-server', 'discovery-server', 'api-gateway',
+        'example-application', 'example-client',
+        'hystrix-dashboard', 'turbine-application', 'admin-server'
