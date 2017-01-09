@@ -5,7 +5,7 @@
 
 [Documentation](http://cloud.spring.io/spring-cloud-static/Camden.SR3/)
 
-[Spring Boot Admin Server]([http://codecentric.github.io/spring-boot-admin/1.4.5/])
+[Spring Boot Admin Server](http://codecentric.github.io/spring-boot-admin/1.4.5/)
 
 Spring Boot microservice example:
 

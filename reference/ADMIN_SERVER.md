@@ -1,7 +1,7 @@
 ##0.8.0 - Create Spring Boot Admin application
 ###Create the project skeleton
 
-[Spring Boot Admin Server]([http://codecentric.github.io/spring-boot-admin/1.4.5/])
+[Spring Boot Admin Server](http://codecentric.github.io/spring-boot-admin/1.4.5/)
 
 
 ```
