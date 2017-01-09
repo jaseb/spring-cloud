@@ -3,7 +3,7 @@
 ###Create the project skeleton
 
 ```
-cd example-client
+cd api-gateway
 ```
 
 If using Maven:
