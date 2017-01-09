@@ -2,7 +2,10 @@
 ================================================================================
 
 [Spring Cloud Project](http://projects.spring.io/spring-cloud/)
+
 [Documentation](http://cloud.spring.io/spring-cloud-static/Camden.SR3/)
+
+[Spring Boot Admin Server]([http://codecentric.github.io/spring-boot-admin/1.4.5/])
 
 Spring Boot microservice example:
 
@@ -16,7 +19,6 @@ Components include:
 * cloud-hystrix
 * cloud-hystrix-dashboard
 * cloud-turbine
-* cloud-turbine-stream
 
 
 Project sections
