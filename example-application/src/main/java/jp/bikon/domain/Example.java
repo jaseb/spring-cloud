@@ -1,5 +1,7 @@
 package jp.bikon.domain;
 
+import io.swagger.annotations.ApiModelProperty;
+
 /**
  * Copyright (c) 2016 Jase Batchelor. All rights reserved.
  *
@@ -7,13 +9,14 @@ package jp.bikon.domain;
  */
 public final class Example {
 
-    private String text;
+    private String message;
 
-    public String getText() {
-        return text;
+    @ApiModelProperty(notes = "The message content", required = true)
+    public String getMessage() {
+        return message;
     }
 
-    public void setText(final String text) {
-        this.text = text;
+    public void setMessage(final String message) {
+        this.message = message;
     }
 }

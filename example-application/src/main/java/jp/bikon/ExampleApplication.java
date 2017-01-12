@@ -10,7 +10,7 @@ import org.springframework.context.annotation.FilterType;
 @ComponentScan(excludeFilters = {
         @ComponentScan.Filter(
                 type = FilterType.REGEX,
-                pattern="jp.bikon.config.*.*Properties"
+                pattern="jp.bikon.config.properties.*"
         )
 })
 @EnableDiscoveryClient
