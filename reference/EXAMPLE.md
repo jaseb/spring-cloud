@@ -21,7 +21,7 @@ Add [jp.bikon.web.ExampleController.java](../example-application/src/main/java/j
 
 Add [jp.bikon.domain.Example.java](../example-application/src/main/java/jp/bikon/domain/Example.java)
 
-Add [jp.bikon.config.ExampleProperties.java](../example-application/src/main/java/jp/bikon/config/ExampleProperties.java)
+Add [jp.bikon.config.properties.ExampleProperties.java](../example-application/src/main/java/jp/bikon/config/ExampleProperties.java)
 
 Add 'example.message' property to [resources/application.yml](../example-application/src/main/resources/application.yml)
 

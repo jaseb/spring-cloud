@@ -49,6 +49,7 @@ Project sections
 - [0.7.0 - Stream aggregation with Turbine](reference/TURBINE.md)
   - [0.7.1 - Testing the stream aggregation](reference/TURBINE.md)
 - [0.8.0 - Spring Boot Admin Server](reference/ADMIN_SERVER.md)
+- [0.9.0 - Swagger API documentation](reference/SWAGGER.md)
 
 
 Links for local testing:

@@ -12,6 +12,10 @@ spring:
       uri: http://localhost:8888
       failFast: true
 
+endpoints:
+  beans:
+    sensitive: false
+
 # IMPORTANT:
 #
 # In order to run multiple versions of the same app on localhost for testing
