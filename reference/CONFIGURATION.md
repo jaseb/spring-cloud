@@ -104,9 +104,9 @@ If using @Value annotations, then @RefreshScope must be added to the class (Cont
 
 ##0.2.3 - Configuration property encryption and decryption
 
-The following is based on the example from [Spring Cloud Documentation](http://cloud.spring.io/spring-cloud-static/Camden.SR3/)
-- [Encryption and Decryption](http://cloud.spring.io/spring-cloud-static/Camden.SR3/#_encryption_and_decryption)
-- [Key Management](http://cloud.spring.io/spring-cloud-static/Camden.SR3/#_key_management)
+The following is based on the example from [Spring Cloud Documentation](http://cloud.spring.io/spring-cloud-static/Camden.SR4/)
+- [Encryption and Decryption](http://cloud.spring.io/spring-cloud-static/Camden.SR4/#_encryption_and_decryption)
+- [Key Management](http://cloud.spring.io/spring-cloud-static/Camden.SR4/#_key_management)
 
 #####Setup the Java keystore
 

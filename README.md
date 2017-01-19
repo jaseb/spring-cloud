@@ -3,7 +3,7 @@
 
 [Spring Cloud Project](http://projects.spring.io/spring-cloud/)
 
-[Documentation](http://cloud.spring.io/spring-cloud-static/Camden.SR3/)
+[Documentation](http://cloud.spring.io/spring-cloud-static/Camden.SR4/)
 
 [Spring Boot Admin Server](http://codecentric.github.io/spring-boot-admin/1.4.5/)
 
